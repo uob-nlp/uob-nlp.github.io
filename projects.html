@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script src="assets/js/jquery.min.js"></script>
+    	<script> 
+	    $(function(){
+	      $("#sidebar").load("sidebar.html"); 
+	    });
+	    </script> 
+
+		<title>University of Bristol NLProc</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<!-- Header -->
+					<header id="header" class="logo" style="font-size: 2.6em; font-family: RufusBold, Georgia, sans-serif; font-weight: 400; background-color: rgb(28, 118, 152); color: #e6e5e0">
+						<strong style="color: rgb(255, 255, 255)">Natural Language Processing</strong> @ University of Bristol
+					</header>
+
+					<!-- Banner -->
+					<section>
+
+                        <div style="padding-left: 4em;">
+                           
+                            <!--<h2>Work in progress</h2>-->
+                            <p>Below you will find a selection of the topics we have been working on recently. This page is a work in progress and not everything we do is covered here, so please get in touch with individual group members to find out more about their work. </p>
+						    <hr class="major" />
+
+                            <h2>Timeline Summarisation</h2>
+						    
+						    <p><span class="image left"><img src="images/tls_1.png" alt="an example timeline summary" width="90%"/></span>When a chain of events unfolds over several days, it can be difficult to get an overview of what happened, when. Timeline summarisation processes multiple articles, detects individual events, and constructs a timeline about a particular news topic. We have developed an interactive approach, which allows users to specify keywords of interest and express preferences over different summaries, then learns to meet the user's needs.</p><br/>
+                            <span class="image right"><img src="images/tls_2.png" alt="interactive learning loop" width="70%"/></span><h3>Software:</h3>
+                            <p>
+							<a href="https://github.com/Haruhi07/PBRL-TLS">Github</a>
+                            </p>
+                            <h3>Selected papers:</h3>
+                            <ul style="list-style-type:none;">
+                            <li><a href="https://ebooks.iospress.nl/doi/10.3233/FAIA230601">Towards Abstractive Timeline Summarisation using Preference-based Reinforcement Learning</a></li>
+                            </ul>
+
+                            <hr class="major" />
+
+                            <h2>NLP for Healthcare</h2>
+						    
+						    <p><span class="image left"><img src="images/healthcare_1.png" alt="an example timeline summary" width="90%"/></span>
+						    Clinical notes aim to record key observations and diagnoses made during a medical consultation. However, creating the notes can often interrupts doctors in their work, as they need to pause a conversation to type or look up information on a particular condition. We are working with GPs to develop tools that help them to take high quality notes during consultations. NLP tools can also provide enhancements to other areas of health and wellbeing: with Squiboon, we are developing a conversational assistant to facilitate conversations among older adults to help carers, housing providers, and improve connections within a community.   
+						    </p><br/>
+                            <span class="image right"><img src="images/healthcare_2.png" alt="interactive learning loop" width="70%"/></span>
+                            <h3>Selected papers:</h3>
+                            <ul style="list-style-type:none;">
+                            <li><a href="https://informatics.bmj.com/content/30/1/e100659">Analysis of ‘One in a Million’ Primary Care Consultation Conversations Using Natural Language Processing</a></li>
+                            </ul>
+                            <h3>Project link</h3>
+                            <a href="https://www.ukri.org/news/sixteen-healthy-ageing-projects-win-funding-to-scale-innovations/">UKRI Healthy Ageing Challenge</a>
+
+                            <hr class="major" />
+
+                            <h2>Preference Learning</h2>
+						    <p><span class="image right"><img src="images/preference_learning_0.png" alt="funniness example" width="100%"/></span>Is this joke funny? Is your argument convincing? Is this summary any good? When considering these qualities, it's hard to make a categorical decision, but often easier to make a comparative judgement: which joke is funnier, which arugment is more convincing, or which summary is more helpful. Our Bayesian preference learning methods enable learning from sparse and noisy pairwise comparisons. By using Bayesian optimisation to carefully select the most informative comparisons, we can reduce the amount of questions we have to ask a user to learn their preferences down to a handful. 
+							<span class="image left"><img src="images/preference_learning_1.png" alt="GPPL figure" width="100%"/>
+                            </span>
+						    </p>
+
+                            <span class="image right"><img src="images/preference_learning_2.png" alt="GPPL figure" width="90%"/>
+                            </span>
+                    		                           
+                            <h3>Software:</h3>
+                            
+                            <a href="https://github.com/UKPLab/tacl2020-interactive-ranking">Github -- Interactive ranking </a><br/>
+							<a href="https://github.com/ukplab/tacl2018-preference-convincing">Github -- GPPL Preference learning</a>
+													
+                            
+                            <h3>Selected papers:</h3>
+                            <ul style="list-style-type:none;">
+                            <li><a href="https://arxiv.org/pdf/1911.10183.pdf">Interactive Text Ranking with Bayesian Optimisation: A Case Study on Community QA and Summarisation</a></li>
+                            <li><a href="https://arxiv.org/abs/1912.01987">Scalable Bayesian Preference Learning for Crowds</a></li>
+                            <li><a href="https://aclanthology.org/P19-1572.pdf">Predicting Humorousness and Metaphor Novelty with Gaussian Process Preference Learning</a></li>
+                            <li><a href="https://transacl.org/ojs/index.php/tacl/article/view/1304">Finding Convincing Arguments Using Scalable Bayesian Preference Learning </a></li>
+						    </ul>
+							<p/>
+
+						    <hr class="major" />
+
+                            <h2>Aggregating Annotations: Bayesian Combination</h2>
+                            <p><span class="image right"><img src="images/bayesian_combination_1.png" alt="crowdsourcing" width="50%"/></span>Annotated data is needed for training and evaluating machine learning models, but where do the labels come from? Often, humans are required to label examples from a dataset, particularly when working with language data. 
+                            Expert labellers are expensive, so a typical approach is a crowdsourcing -- asking untrained people to annotate the data. This is prone to errors. Our work on Bayesian combination methods can mitigate these errors, allowing us to obtain reliable labels from noisy annotations. </p>
+                            <span class="image left"><img src="images/bayesian_combination_2.png" alt="figures for Bayesian combination models" width="100%"/></span>
+                            <h3>Software:</h3>
+							<a href="https://github.com/ukplab/arxiv2018-bayesian-ensembles">Github</a>
+                            <br/>
+                            <h3>Selected papers:</h3>
+                            <ul style="list-style-type:none;">
+                            <li><a href="https://arxiv.org/abs/1811.00780">A Bayesian Approach for Sequence Tagging with Crowds</a></li>
+                            <li><a href="https://public.ukp.informatik.tu-darmstadt.de/UKP_Webpage/publications/2020/2020_AAAI_SE_LowResourceSequence.pdf">Low Resource Sequence Tagging with Weak Labels</a></li>
+                            <li><a href="https://arxiv.org/abs/1206.1831">Dynamic Bayesian Combination of Multiple Imperfect Classifiers</a></li>
+                        	</ul>
+                        	
+
+                            <hr class="major" />
+
+                        </div>
+		
+    
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+
+			</div>
+
+		</div>
+	</body>
+</html>
