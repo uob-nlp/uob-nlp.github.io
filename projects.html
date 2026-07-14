@@ -62,7 +62,7 @@ How can AI and NLP models help clinicians, patients and researchers to improve h
 		providing a much quicker way to identify risks to children and support timely interventions. 		
 	</li>
 	<li>Combining textual and visual information to improve Radiology report generation by following a process inspired by how human radiologists look at Radiology data and clinical notes. 
-	<a href="https://ieeexplore.ieee.org/abstract/document/10545538">See our survey paper in IEE Reviews in Biomedical Engineering, 2024.</a></li>
+	<a href="https://ieeexplore.ieee.org/abstract/document/10545538">See our survey paper in IEE Reviews in Biomedical Engineering, 2024.</a> </li>
 	<li>AI scribes, which listen to consultations and draft clinical notes, are being widely adopted by GPs around the world. But how well do they actually work? Do they save time or improve the quality of doctors’ notes? We’re working with clinicians at the Bristol Medical School to develop a framework for assessing the real-world impact of these tools.
 		This work is led by Dr. Peter Edwards in the Centre for Academic Primary Care (see his work on consultation notes in <a href="https://bjgp.org/content/74/742/202.1">British Journal of General Practice, Letters</a>).
 	</li>
@@ -73,8 +73,26 @@ How can AI and NLP models help clinicians, patients and researchers to improve h
 								
 							</p><br/>
 
-							<h2></h2>
-							<p><span class="image left"><img src="images/placeholder.png" alt="placeholder image" width="90%"/></span> text </p><br/>
+							<h2>Learning Specialised Models Under Uncertainty</h2>
+
+							Small models are fast and cheap; they can be run on standard local hardware without transferring sensitive data to the cloud, unlike remote LLMs, which is important in sensitive domains like healthcare. With the right training, they can excel at tasks such as document classification. However, training is made harder by small amounts data and label noise, and the performance of small models tends to collapse when tested on new examples that are very different to their training data – so called out-of-distribution (OOD) examples. 
+Our research is developing methods for adapting small, specialised models with limited data, detecting OOD cases, and quantifying uncertainty in data, models, and predictions to handle these issues. 
+
+							
+							<p><span class="image left"><img src="images/placeholder.png" alt="placeholder image" width="90%"/></span> 
+
+<ul style="list-style-type:circle;">
+								
+	<li>Safe deployment of classifiers requires the system to recognise when an input is out-of-distribution: a novel kind of example, perhaps of an entirely new category, that the model has not been trained to handle. Our work introduces a technique for improving OOD detection and shows its effectiveness for multimodal document classification. 
+								<a href="https://www.nature.com/articles/s41598-025-32328-9.pdf">Out of distribution detection with attention head masking for multimodal document classification, Nature Scientific Reports 2025.  </a></li>
+	<li>A quick way to ‘build’ a text classifier is to write instructions for an LLM, but how can we compress that to a smaller, more efficient program for running at high frequency? We introduce a pipeline for distilling LLM classification to small models, using synthetic data generation, and showcase its effectiveness for building financial sentiment classifiers. 
+		<a href="https://arxiv.org/abs/2606.18875">Efficient Financial Language Understanding via Distillation with Synthetic Data, LREC 2026.</a></li>							
+	<li>
+		We may want to personalise a model, e.g., to generate the kind of summaries we need for a specific use case, but a single user can only provide a tiny amount of training data. Bayesian optimisation provides a way of deciding what to annotate so that we can adapt summarisation and question answering models with just a handful of labels. 
+		<a href="https://aclanthology.org/2024.uncertainlp-1.7/">Efficiently Acquiring Human Feedback with Bayesian Deep Learning, UncertaiNLP 2024</a>.
+	</li>
+</ul>
+</p><br/>
 
 							<h2></h2>
 							<p><span class="image left"><img src="images/placeholder.png" alt="placeholder image" width="90%"/></span> text </p><br/>
