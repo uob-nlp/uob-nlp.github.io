@@ -94,7 +94,7 @@ How can AI and NLP models help clinicians, patients and researchers to improve h
 							
 							<p><span class="image left"><img src="images/OOD_detection_AHM.png" alt="The process of out-of-distribution detection with attention head masking." width="80%"/>
 								<img src="images/lrec_distillation.png" alt="A workflow for distillation with synthetic data, and a figure showing how synthetic data points distribute across the space of real data points. " width="80%"/>
-							    <img src="images/preference_learning_2.png" alt="An interactive preference learning process with human in the loop using Bayesian optimisation." width="60%"/>
+							    <!--img src="images/preference_learning_2.png" alt="An interactive preference learning process with human in the loop using Bayesian optimisation." width="60%"/-->
 							</span>
 
 							Small models are fast and cheap; they can be run on standard local hardware without transferring sensitive data to the cloud, unlike remote LLMs, which is important in sensitive domains like healthcare. With the right training, they can excel at tasks such as document classification. However, training is made harder by small amounts data and label noise, and the performance of small models tends to collapse when tested on new examples that are very different to their training data – so called out-of-distribution (OOD) examples. 
@@ -110,8 +110,13 @@ How can AI and NLP models help clinicians, patients and researchers to improve h
 		We may want to personalise a model, e.g., to generate the kind of summaries we need for a specific use case, but a single user can only provide a tiny amount of training data. Bayesian optimisation provides a way of deciding what to annotate so that we can adapt summarisation and question answering models with just a handful of labels. 
 		<a href="https://aclanthology.org/2024.uncertainlp-1.7/">Efficiently Acquiring Human Feedback with Bayesian Deep Learning, UncertaiNLP 2024</a>.
 	</li>
+	<li>
+		Uncertainty in language itself presents a challenge for NLP systems, including LLMs: can they recognise figurative language, such as metaphors? Can they correctly process negation? Work led by Jasmine Owers (look out for the TACL paper to appear shortly!) is helping us to understand how LLMs and other transformer models differ from humans in how they process figurative language.  
+	</li>
 </ul>
 </p><br/>
+
+
 
 							<h2>Automated Essay Scoring</h2>
 							<p><span class="image left"><img src="images/AES_active_learning.png" alt="Active learning cycle showing how an automated essay scoring system can request human markers to grade essays with uncertain scores." width="90%"/></span> 
@@ -126,6 +131,8 @@ One kind of specialised model is the automated essay scorer: it helps teachers t
 
 							
 							</p><br/>
+
+							<h2></h2>
 
 						</div>
 					</section>
