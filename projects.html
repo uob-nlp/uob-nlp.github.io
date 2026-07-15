@@ -61,7 +61,7 @@ How can AI and NLP models help clinicians, patients and researchers to improve h
 	<li>Working with the Child Mortality Analysis Unit to develop <a href="https://elizabethblackwellinstitute.blogs.bristol.ac.uk/2026/06/04/explainable-ai-for-early-categorisation-of-child-deaths-real-time-insights-for-prevention/">an early categorisation system for the causes of child deaths in England</a>,
 		providing a much quicker way to identify risks to children and support timely interventions. 		
 	</li>
-	<li><span class="image left"><img src="images/star3_overview.png" alt="An overview of the STAR3 architecture for fine-grained radiology report generation, combining images with textual information to generate reports." width="100%"/></span>Combining textual and visual information to improve Radiology report generation by following a process inspired by how human radiologists look at Radiology data and clinical notes. 
+	<li><span class="image left"><img src="images/star3_overview.png" alt="An overview of the STAR3 architecture for fine-grained radiology report generation, combining images with textual information to generate reports." width="80%"/></span>Combining textual and visual information to improve Radiology report generation by following a process inspired by how human radiologists look at Radiology data and clinical notes. 
 	<a href="https://ieeexplore.ieee.org/abstract/document/10545538">See our survey paper in IEE Reviews in Biomedical Engineering, 2024.</a> </li>
 	<li><span class="image left"><img src="images/healthcare_1.png" alt="An illustration of a doctor taking consultation notes." width="30%"/></span> AI scribes, which listen to consultations and draft clinical notes, are being widely adopted by GPs around the world. But how well do they actually work? Do they save time or improve the quality of doctors’ notes? We’re working with clinicians at the Bristol Medical School to develop a framework for assessing the real-world impact of these tools.
 		This work is led by Dr. Peter Edwards in the Centre for Academic Primary Care (see his work on consultation notes in <a href="https://bjgp.org/content/74/742/202.1">British Journal of General Practice, Letters</a>). 
@@ -75,14 +75,13 @@ How can AI and NLP models help clinicians, patients and researchers to improve h
 							</p><br/>
 
 							<h2>Learning Specialised Models Under Uncertainty</h2>
+							
+							<p><span class="image left"><img src="images/OOD_detection_AHM.png" alt="The process of out-of-distribution detection with attention head masking." width="90%"/>
+								<img src="images/lrec_distillation.png" alt="A workflow for distillation with synthetic data, and a figure showing how synthetic data points distribute across the space of real data points. " width="90%"/></span>
 
 							Small models are fast and cheap; they can be run on standard local hardware without transferring sensitive data to the cloud, unlike remote LLMs, which is important in sensitive domains like healthcare. With the right training, they can excel at tasks such as document classification. However, training is made harder by small amounts data and label noise, and the performance of small models tends to collapse when tested on new examples that are very different to their training data – so called out-of-distribution (OOD) examples. 
 <br/>Our research is developing methods for adapting small, specialised models with limited data, detecting OOD cases, and quantifying uncertainty in data, models, and predictions to handle these issues. 
-
-							
-							<p><span class="image left"><img src="images/OOD_detection_AHM.png" alt="The process of out-of-distribution detection with attention head masking." width="90%"/></span>
-								<span class="image left"><img src="images/lrec_distillation.png" alt="A workflow for distillation with synthetic data, and a figure showing how synthetic data points distribute across the space of real data points. " width="90%"/></span>
-
+								
 <ul style="list-style-type:circle;">
 								
 	<li>Safe deployment of classifiers requires the system to recognise when an input is out-of-distribution: a novel kind of example, perhaps of an entirely new category, that the model has not been trained to handle. Our work introduces a technique for improving OOD detection and shows its effectiveness for multimodal document classification. 
